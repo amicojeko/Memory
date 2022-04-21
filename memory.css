@@ -1,0 +1,45 @@
+#content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 600;
+}
+
+.card{
+  position: relative;
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+.card img{
+  height: 100px;
+  width: 100px;
+}
+
+.card.flipped{
+  border-color: #af4c56;
+}
+
+.card.flipped .card-back, .card.matched .card-back{
+  display: none;
+}
+
+.card.matched{
+  background-color: #4CAF50;
+}
+
+.card-back{
+  background-image: url(images/card-back.jpg);
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
