@@ -43,8 +43,8 @@ $(document).ready(function () {
     }
 
     // implicit conditions at this point:
-    // 1. the card has not been flipped
-    // 2. there are no two cards flipped
+    // 1. the clicked card has not been flipped yet
+    // 2. only 0 or 1 card has been flipped
 
     // Flip the card
     $(this).addClass("flipped")
